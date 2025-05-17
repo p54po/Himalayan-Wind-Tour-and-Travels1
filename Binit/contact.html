@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home | Himalayan Wind Tour & Travels</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="Untitled-1.png" alt="" />
+      <h1></h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hero Slider</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+ <!-- Hero Slider -->
+<section class="hero-carousel">
+  <div class="slide active" style="background-image: url('Tea_Estate,_Darjeeling.jpg');"></div>
+  <div class="slide" style="background-image: url('file\ 3.jpg');"></div>
+  <div class="slide" style="background-image: url('file\ 4.jpg');"></div>
+
+  <div class="overlay">
+    <h1>Explore With Himalayan Wind Tour & Travels</h1>
+    <p>"Escape, Explore, Experience"</p>
+  </div>
+</section>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Darjeeling Tour Booking</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  </head>
+  <body>
+  
+    <div class="booking-container">
+      <h2>Book Your Darjeeling Tour</h2>
+      <form id="booking-form">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Full Name" required>
+  
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Email Address" required>
+  
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+  
+        <label for="date">Travel Date</label>
+        <input type="date" id="date" name="travel_date" required>
+  
+        <label for="travelers">Number of Travelers</label>
+        <input type="number" id="travelers" name="travelers" placeholder="Number of Travelers" min="1" required>
+  
+        <label for="package">Package</label>
+        <select id="package" name="package" required>
+          <option value="Darjeeling 3N/4D">Darjeeling 3N/4D</option>
+          <option value="Darjeeling + Gangtok 5N/6D">Darjeeling + Gangtok 5N/6D</option>
+          <option value="Darjeeling + Gangtok 5N/6D">Darjeeling + Gangtok 5N/6D</option>
+          <option value="Darjeeling + Gangtok 5N/6D">Darjeeling + Gangtok 5N/6D</option>
+          <option value="Darjeeling + Gangtok 5N/6D">Darjeeling + Gangtok 5N/6D</option>
+        </select>
+  
+        <label for="message">Special Requests</label>
+        <textarea id="message" name="message" placeholder="Special Requests..."></textarea>
+  
+        <button type="submit">Send Booking</button>
+      </form>
+    </div>
+  
+    <script>
+      (function() {
+        emailjs.init("lTZY02SMuEh2VG-BR"); // Replace with your EmailJS public key
+      })();
+  
+      document.getElementById("booking-form").addEventListener("submit", function(e) {
+        e.preventDefault();
+        emailjs.sendForm("service_bqfy86j", "template_2gdg43s", this)
+          .then(function() {
+            alert("Booking submitted successfully!");
+            document.getElementById("booking-form").reset();
+          }, function(error) {
+            alert("Failed: " + error.text);
+          });
+      });
+    </script>
+  
+  </body>
+  </html>
+  
+
+
+
+<!-- Include Font Awesome CDN in <head> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Company Info -->
+      <div class="footer-column">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+  
+      <!-- Important Links -->
+      <div class="footer-column">
+        <h3>Famous Packages</h3>
+        <ul>
+          <li><a href="darjeeling.html">Excellent Darjeeling</a></li>
+          <li><a href="Village tour.html">Village Tours</a></li>
+          <li><a href="pkg3.html">Mixed sightseeing</a></li>
+          <li><a href="pkg4.html">Lakes Tours</a></li>
+          <li><a href="pkg5.html">Only Pickup and Drop</a></li>
+        </ul>
+      </div>
+  
+      <!-- Tour Themes -->
+      <div class="footer-column">
+        <h3>Tour Themes</h3>
+        <ul>
+          <li><a href=>Tea Tours</a></li>
+          <li><a href=>Cultural Tours</a></li>
+          <li><a href=>Festival Tours</a></li>
+          <li><a href=>Wildlife Tours</a></li>
+          <li><a href=>River Tours</a></li>
+          <li><a href=>Temple Tours</a></li>
+          <li><a href=>Honeymoon Tours</a></li>
+        </ul>
+      </div>
+  
+      <!-- Contact + Social -->
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <p><i class="fas fa-phone"></i> <a href="tel:+91-9800408957">+91-9800408957</a></p>
+        <p><i class="fas fa-phone"></i> <a href="tel:+91-7866957621">+91-7866957621</a></p>
+        <p><i class="fas fa-phone"></i> <a href="tel:+91-8250259118">+91-8250259118</a></p>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:enquiry@clubside.in">himalayanwindtourtravels@gmail.com</a></p>
+  
+        <!-- Include EmailJS SDK in your <head> -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  emailjs.init("lTZY02SMuEh2VG-BR"); // ← replace with your EmailJS Public Key
+</script>
+
+<!-- Newsletter Section -->
+<h4>Newsletter</h4>
+<form id="newsletter-form" class="newsletter-form">
+  <input type="text" name="user_name" placeholder="Your Name" required />
+  <input type="email" name="user_email" placeholder="Email ID" required />
+  <button type="submit">Subscribe</button>
+</form>
+
+<script>
+  document.getElementById("newsletter-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+    // sendForm(serviceID, templateID, formElement)
+    emailjs.sendForm("service_bqfy86j", "template_2m7m9ef", this)
+      .then(function() {
+        alert("Thank you for subscribing!"); 
+        document.getElementById("newsletter-form").reset();
+      }, function(error) {
+        alert("Subscription failed: " + error.text);
+      });
+  });
+</script>
+
+  
+        <div class="social-icons">
+          <a href="https://www.facebook.com/profile.php?id=61576163992175" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://x.com/WindHimalayan" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/himalayan_wind111/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/919800408957" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>We are proud to be associated with <a href="https://cyberhelpindia.com" target="_blank">Cyber Help India</a></p>
+      <p><a href="" target="_blank">Find Our Location</a> |
+         <a href="" target="_blank">Read Google Reviews</a></p>
+      <p>&copy; Himalayan Wind Tours & Travels. / 2025 - All Rights Reserved</p>
+    </div>
+  </footer>
+  
